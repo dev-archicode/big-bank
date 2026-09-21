@@ -1,0 +1,69 @@
+schemaVersion: 1
+
+rules:
+  - id: container-in-one-system
+    kind: cardinality
+    severity: error
+    description: "A container is part of exactly one software system"
+    elements: { type: container }
+    direction: incoming
+    relations: { type: contains, source: { type: software-system } }
+    min: 1
+    max: 1
+
+  - id: component-in-one-container
+    kind: cardinality
+    severity: error
+    description: "A component is part of exactly one container"
+    elements: { type: component }
+    direction: incoming
+    relations: { type: contains, source: { type: container } }
+    min: 1
+    max: 1
+
+  - id: infrastructure-node-in-one-deployment-node
+    kind: cardinality
+    severity: error
+    description: "An infrastructure node runs inside exactly one deployment node"
+    elements: { type: infrastructure-node }
+    direction: incoming
+    relations: { type: contains, source: { type: deployment-node } }
+    min: 1
+    max: 1
+
+  - id: deployment-node-nested-once
+    kind: cardinality
+    severity: error
+    description: "A nested deployment node has one parent"
+    elements: { type: deployment-node }
+    direction: incoming
+    relations: { type: contains, source: { type: deployment-node } }
+    max: 1
+
+  - id: element-is-described
+    kind: required-property
+    severity: warning
+    description: "Every element states its key responsibilities at a glance"
+    elements: {}
+    property: description
+
+  - id: technology-is-named
+    kind: required-property
+    severity: warning
+    description: "Every container and component names its technology"
+    elements: { type: [container, component] }
+    property: technology
+
+  - id: relationship-is-labelled
+    kind: required-property
+    severity: warning
+    description: "Every relationship says what it does, in the direction it points"
+    relations: { type: uses }
+    property: description
+
+  - id: container-call-names-protocol
+    kind: required-property
+    severity: warning
+    description: "A relationship between two containers names its technology or protocol"
+    relations: { type: uses, source: { type: container }, target: { type: container } }
+    property: technology
