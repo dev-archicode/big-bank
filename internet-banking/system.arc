@@ -17,12 +17,6 @@ elements:
         target: api-application
       - type: contains
         target: database
-      - type: uses
-        target: landscape.mainframe-banking-system
-        description: "Gets account information from, and makes payments using"
-      - type: uses
-        target: landscape.email-system
-        description: "Sends e-mail using"
 
   web-application:
     type: container

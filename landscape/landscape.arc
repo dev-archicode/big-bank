@@ -8,9 +8,6 @@ elements:
     description: "A customer of the bank, with personal bank accounts."
     relations:
       - type: uses
-        target: internet-banking.internet-banking-system
-        description: "Views account balances, and makes payments using"
-      - type: uses
         target: internet-banking.web-application
         description: "Visits bigbank.com/ib using"
         properties:
