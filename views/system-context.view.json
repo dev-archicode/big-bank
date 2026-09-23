@@ -1,0 +1,17 @@
+{
+  "edges": [
+    { "derived": true, "source": "internet-banking.internet-banking-system", "target": "landscape.email-system", "type": "uses" },
+    { "derived": true, "source": "internet-banking.internet-banking-system", "target": "landscape.mainframe-banking-system", "type": "uses" },
+    { "source": "landscape.email-system", "target": "landscape.personal-banking-customer", "type": "uses" },
+    { "derived": true, "source": "landscape.personal-banking-customer", "target": "internet-banking.internet-banking-system", "type": "uses" }
+  ],
+  "id": "system-context",
+  "nodes": [
+    { "height": 120, "ref": "internet-banking.internet-banking-system", "width": 240, "x": 360, "y": 240 },
+    { "height": 120, "ref": "landscape.email-system", "width": 240, "x": 720, "y": 240 },
+    { "height": 120, "ref": "landscape.mainframe-banking-system", "width": 240, "x": 360, "y": 480 },
+    { "height": 120, "ref": "landscape.personal-banking-customer", "width": 240, "x": 360, "y": 0 }
+  ],
+  "schemaVersion": 1,
+  "title": "System Context"
+}

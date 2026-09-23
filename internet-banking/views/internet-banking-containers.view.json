@@ -1,0 +1,28 @@
+{
+  "edges": [
+    { "source": "internet-banking.api-application", "target": "internet-banking.database", "type": "uses" },
+    { "source": "internet-banking.api-application", "target": "landscape.email-system", "type": "uses" },
+    { "source": "internet-banking.api-application", "target": "landscape.mainframe-banking-system", "type": "uses" },
+    { "source": "internet-banking.mobile-app", "target": "internet-banking.api-application", "type": "uses" },
+    { "source": "internet-banking.single-page-application", "target": "internet-banking.api-application", "type": "uses" },
+    { "source": "internet-banking.web-application", "target": "internet-banking.single-page-application", "type": "uses" },
+    { "source": "landscape.email-system", "target": "landscape.personal-banking-customer", "type": "uses" },
+    { "source": "landscape.personal-banking-customer", "target": "internet-banking.mobile-app", "type": "uses" },
+    { "source": "landscape.personal-banking-customer", "target": "internet-banking.single-page-application", "type": "uses" },
+    { "source": "landscape.personal-banking-customer", "target": "internet-banking.web-application", "type": "uses" }
+  ],
+  "id": "internet-banking-containers",
+  "nodes": [
+    { "height": 120, "parent": "internet-banking.internet-banking-system", "ref": "internet-banking.api-application", "width": 240, "x": 360, "y": 320 },
+    { "height": 120, "parent": "internet-banking.internet-banking-system", "ref": "internet-banking.database", "width": 240, "x": 680, "y": 320 },
+    { "height": 520, "ref": "internet-banking.internet-banking-system", "width": 960, "x": 0, "y": 200 },
+    { "height": 120, "parent": "internet-banking.internet-banking-system", "ref": "internet-banking.mobile-app", "width": 240, "x": 680, "y": 80 },
+    { "height": 120, "parent": "internet-banking.internet-banking-system", "ref": "internet-banking.single-page-application", "width": 240, "x": 360, "y": 80 },
+    { "height": 120, "parent": "internet-banking.internet-banking-system", "ref": "internet-banking.web-application", "width": 240, "x": 40, "y": 80 },
+    { "height": 120, "ref": "landscape.email-system", "width": 240, "x": 1040, "y": 600 },
+    { "height": 120, "ref": "landscape.mainframe-banking-system", "width": 240, "x": 1040, "y": 400 },
+    { "height": 120, "ref": "landscape.personal-banking-customer", "width": 240, "x": 360, "y": 0 }
+  ],
+  "schemaVersion": 1,
+  "title": "Internet Banking System containers"
+}
