@@ -8,25 +8,3 @@ version: "1.0"
 notation:
   name: c4
   version: "1.0"
-
-rules:
-  - structure.rules.yml
-
-properties:
-  container:
-    - key: technology
-      type: string
-  component:
-    - key: technology
-      type: string
-  deployment-node:
-    - key: technology
-      type: string
-    - key: instances
-      type: integer
-  infrastructure-node:
-    - key: technology
-      type: string
-  uses:
-    - key: technology
-      type: string
