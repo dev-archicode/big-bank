@@ -1,10 +1,5 @@
 schemaVersion: 1
 properties:
   deployment-node:
-    - key: technology
-      type: string
     - key: instances
       type: integer
-  infrastructure-node:
-    - key: technology
-      type: string
