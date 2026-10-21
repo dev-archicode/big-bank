@@ -19,7 +19,7 @@
     { "height": 120, "parent": "internet-banking.internet-banking-system", "ref": "internet-banking.mobile-app", "width": 240, "x": 680, "y": 80 },
     { "height": 120, "parent": "internet-banking.internet-banking-system", "ref": "internet-banking.single-page-application", "width": 240, "x": 360, "y": 80 },
     { "height": 120, "parent": "internet-banking.internet-banking-system", "ref": "internet-banking.web-application", "width": 240, "x": 40, "y": 80 },
-    { "height": 120, "ref": "landscape.email-system", "width": 240, "x": 1040, "y": 600 },
+    { "height": 120, "ref": "landscape.email-system", "width": 240, "x": 1040, "y": 270 },
     { "height": 120, "ref": "landscape.mainframe-banking-system", "width": 240, "x": 1040, "y": 400 },
     { "height": 120, "ref": "landscape.personal-banking-customer", "width": 240, "x": 360, "y": 0 }
   ],
