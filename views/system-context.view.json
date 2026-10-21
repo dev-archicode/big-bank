@@ -12,7 +12,7 @@
     { "height": 120, "ref": "internet-banking.internet-banking-system", "width": 240, "x": 389, "y": 55 },
     { "height": 120, "ref": "internet-banking.web-application", "width": 200, "x": 448, "y": 595 },
     { "height": 120, "ref": "landscape.email-system", "width": 240, "x": 321, "y": 235 },
-    { "height": 120, "ref": "landscape.mainframe-banking-system", "width": 240, "x": 41, "y": 235 },
+    { "height": 120, "ref": "landscape.mainframe-banking-system", "width": 240, "x": 60, "y": 130 },
     { "height": 120, "ref": "landscape.personal-banking-customer", "width": 240, "x": 281, "y": 415 }
   ],
   "schemaVersion": 1,
